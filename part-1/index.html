@@ -1,0 +1,1048 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Positivus</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Space Grotesk", sans-serif;
+      }
+      .swiper-pagination-bullet {
+        background: #191a23 !important;
+        opacity: 0.5;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: #b9ff66 !important;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black">
+    <div class="max-w-[1440px] mx-auto md:px-12 2xl:px-8 py-8">
+      <div
+        id="nav-wrapper"
+        class="fixed top-0 left-0 w-full z-40 bg-white/90 backdrop-blur-sm transition-all duration-300"
+      >
+        <nav
+          id="main-nav"
+          class="flex items-center justify-between px-4 md:px-12 2xl:px-8 py-4 max-w-[1440px] mx-auto w-full"
+        >
+          <div class="flex items-center gap-2 font-bold text-3xl">
+            <img
+              src="assets/img/logos/logo-positivus.png"
+              alt="Logo Positivus"
+            />
+          </div>
+
+          <div class="hidden md:flex items-center gap-8 text-lg">
+            <a href="#" class="hover:underline text-xl">About us</a>
+            <a href="#services" class="hover:underline text-xl">Services</a>
+            <a href="#cases" class="hover:underline text-xl">Use Cases</a>
+            <a href="#" class="hover:underline text-xl">Pricing</a>
+            <a href="#" class="hover:underline text-xl">Blog</a>
+            <button
+              class="border border-black px-6 py-3 rounded-xl hover:bg-primary hover:text-white transition-all"
+            >
+              Request a quote
+            </button>
+          </div>
+
+          <button
+            id="menu-open"
+            class="md:hidden p-2 text-black focus:outline-none"
+          >
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 7H26M4 15H26M4 23H26"
+                stroke="black"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </nav>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="fixed top-0 right-0 h-full w-full bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden shadow-2xl"
+      >
+        <div class="p-8 flex flex-col h-full">
+          <div class="flex items-center justify-between mb-12">
+            <img src="assets/img/logos/logo-positivus.png" class="h-8" alt="" />
+            <button id="menu-close" class="p-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M18 6L6 18M6 6L18 18"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="flex flex-col gap-6 text-2xl font-medium">
+            <a href="#" class="hover:text-lime">About us</a>
+            <a href="#services" class="hover:text-lime">Services</a>
+            <a href="#cases" class="hover:text-lime">Use Cases</a>
+            <a href="#" class="hover:text-lime">Pricing</a>
+            <a href="#" class="hover:text-lime">Blog</a>
+            <button
+              class="mt-4 border border-black px-6 py-4 rounded-xl hover:bg-primary hover:text-white transition-all"
+            >
+              Request a quote
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <main class="grid md:grid-cols-2 gap-8 items-center mt-16 px-4 md:px-0">
+        <div class="order-1 md:order-1">
+          <h1
+            class="text-[40px] md:text-6xl font-medium leading-tight mb-8 md:max-w-[531px]"
+          >
+            Navigating the digital landscape for success
+          </h1>
+          <div class="md:hidden">
+            <img src="assets/img/bg-hero.png" alt="" />
+          </div>
+          <p class="text-xl mb-10 max-w-[498px]">
+            Our digital marketing agency helps businesses grow and succeed
+            online through a range of services including SEO, PPC, social media
+            marketing, and content creation.
+          </p>
+
+          <button
+            class="bg-primary w-full md:w-fit text-white text-xl px-6 py-5 rounded-2xl hover:bg-primary/60 transition-all"
+          >
+            Book a consultation
+          </button>
+        </div>
+
+        <div class="order-1 md:order-2 flex justify-end">
+          <div
+            class="hidden w-full max-w-[600px] aspect-square md:flex items-center justify-end"
+          >
+            <img src="assets/img/bg-hero.png" alt="" />
+          </div>
+        </div>
+      </main>
+
+      <section class="mt-20 overflow-hidden md:overflow-visible px-4 md:px-0">
+        <div
+          class="hidden md:flex flex-wrap justify-between items-center gap-8 grayscale"
+        >
+          <img src="assets/img/logos/amazon.png" alt="Amazon" />
+          <img src="assets/img/logos/dribble.png" alt="Dribble" />
+          <img src="assets/img/logos/hubspot.png" alt="Hubspot" />
+          <img src="assets/img/logos/notion.png" alt="Notion" />
+          <img src="assets/img/logos/netiflix.png" alt="Netflix" />
+          <img src="assets/img/logos/zoom.png" alt="Zoom" />
+        </div>
+
+        <div class="flex flex-col gap-8 md:hidden grayscale">
+          <div
+            class="flex w-[200%] animate-infinite-scroll gap-12 items-center"
+          >
+            <div
+              class="flex justify-around w-1/2 gap-12 animate-infinite-scroll"
+            >
+              <img
+                src="assets/img/logos/amazon.png"
+                class="w-[120px] h-8 object-contain"
+                alt=""
+              />
+              <img
+                src="assets/img/logos/dribble.png"
+                class="h-8 object-contain"
+                alt=""
+              />
+              <img
+                src="assets/img/logos/hubspot.png"
+                class="h-8 object-contain"
+                alt=""
+              />
+              <img
+                src="assets/img/logos/amazon.png"
+                class="w-[120px] h-8 object-contain"
+                alt=""
+              />
+              <img
+                src="assets/img/logos/dribble.png"
+                class="h-8 object-contain"
+                alt=""
+              />
+              <img
+                src="assets/img/logos/hubspot.png"
+                class="h-8 object-contain"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="flex w-[200%] gap-12 items-center animate-infinite-scroll"
+          >
+            <div class="flex justify-around w-1/2 gap-12">
+              <img
+                src="assets/img/logos/notion.png"
+                class="h-8 object-contain"
+                alt=""
+              />
+              <img
+                src="assets/img/logos/netiflix.png"
+                class="h-8 object-contain"
+                alt=""
+              />
+              <img
+                src="assets/img/logos/zoom.png"
+                class="h-8 object-contain"
+                alt=""
+              />
+            </div>
+            <div class="flex justify-around w-1/2 gap-12">
+              <img
+                src="assets/img/logos/notion.png"
+                class="h-8 object-contain"
+                alt=""
+              />
+              <img
+                src="assets/img/logos/netiflix.png"
+                class="h-8 object-contain"
+                alt=""
+              />
+              <img
+                src="assets/img/logos/zoom.png"
+                class="h-8 object-contain"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-20 px-4 md:px-0" id="services">
+        <div class="flex flex-col md:flex-row items-center gap-10 mb-20">
+          <h2 class="bg-lime text-4xl font-medium px-2 py-1 rounded-lg">
+            Services
+          </h2>
+          <p class="max-w-xl text-lg">
+            At our digital marketing agency, we offer a range of services to
+            help businesses grow and succeed online. These services include:
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10">
+          <div
+            class="bg-grayLight p-8 md:p-12 rounded-[45px] border border-b-[8px] border-black flex flex-col md:flex-row justify-between h-auto md:h-[310px] relative overflow-hidden gap-6"
+          >
+            <div class="flex flex-col justify-between h-full relative z-10">
+              <div class="flex flex-col items-start">
+                <span
+                  class="bg-lime text-2xl md:text-3xl font-medium px-1.5 rounded-md leading-tight"
+                  >Search engine</span
+                >
+                <span
+                  class="bg-lime text-2xl md:text-3xl font-medium px-1.5 rounded-md leading-tight"
+                  >optimization</span
+                >
+              </div>
+              <div
+                class="hidden md:flex items-center gap-4 group cursor-pointer mt-auto h-10"
+              >
+                <div
+                  class="w-10 h-10 bg-black rounded-full flex items-center justify-center shrink-0"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    class="transition-transform duration-300 transform -rotate-[30deg] group-hover:rotate-0"
+                  >
+                    <path
+                      d="M3 10H17M17 10L11 4M17 10L11 16"
+                      stroke="#B9FF66"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+
+                <span class="text-xl flex items-center h-full leading-none">
+                  Learn more
+                </span>
+              </div>
+            </div>
+            <div class="flex md:hidden items-end justify-between w-full mt-4">
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-10 h-10 bg-black rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 15L15 5M15 5H7M15 5V13"
+                      stroke="#B9FF66"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="max-w-[150px]">
+                <img
+                  src="assets/img/services/search.png"
+                  alt="SEO"
+                  class="w-full h-auto"
+                />
+              </div>
+            </div>
+            <div class="hidden md:block max-w-[210px] self-center">
+              <img
+                src="assets/img/services/search.png"
+                alt="SEO"
+                class="w-full h-auto"
+              />
+            </div>
+          </div>
+
+          <div
+            class="bg-lime p-8 md:p-12 rounded-[45px] border border-b-[8px] border-black flex flex-col md:flex-row justify-between h-auto md:h-[310px] relative overflow-hidden gap-6"
+          >
+            <div class="flex flex-col justify-between h-full relative z-10">
+              <div class="flex flex-col items-start">
+                <span
+                  class="bg-white text-2xl md:text-3xl font-medium px-1.5 rounded-md leading-tight"
+                  >Pay-per-click</span
+                >
+                <span
+                  class="bg-white text-2xl md:text-3xl font-medium px-1.5 rounded-md leading-tight"
+                  >advertising</span
+                >
+              </div>
+              <div
+                class="hidden md:flex items-center gap-4 group cursor-pointer mt-auto h-10"
+              >
+                <div
+                  class="w-10 h-10 bg-black rounded-full flex items-center justify-center shrink-0"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    class="transition-transform duration-300 transform -rotate-[30deg] group-hover:rotate-0"
+                  >
+                    <path
+                      d="M3 10H17M17 10L11 4M17 10L11 16"
+                      stroke="#B9FF66"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+
+                <span class="text-xl flex items-center h-full leading-none">
+                  Learn more
+                </span>
+              </div>
+            </div>
+            <div class="flex md:hidden items-end justify-between w-full mt-4">
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-10 h-10 bg-black rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 15L15 5M15 5H7M15 5V13"
+                      stroke="#B9FF66"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="max-w-[150px]">
+                <img
+                  src="assets/img/services/pay-per-clicy.png"
+                  alt="PPC"
+                  class="w-full h-auto"
+                />
+              </div>
+            </div>
+            <div class="hidden md:block max-w-[210px] self-center">
+              <img
+                src="assets/img/services/pay-per-clicy.png"
+                alt="PPC"
+                class="w-full h-auto"
+              />
+            </div>
+          </div>
+
+          <div
+            class="bg-primary p-8 md:p-12 rounded-[45px] border border-b-[8px] border-black flex flex-col md:flex-row justify-between h-auto md:h-[310px] relative overflow-hidden gap-6"
+          >
+            <div class="flex flex-col justify-between h-full relative z-10">
+              <div class="flex flex-col items-start">
+                <span
+                  class="bg-white text-2xl md:text-3xl font-medium px-1.5 rounded-md leading-tight"
+                  >Social Media</span
+                >
+                <span
+                  class="bg-white text-2xl md:text-3xl font-medium px-1.5 rounded-md leading-tight"
+                  >Marketing</span
+                >
+              </div>
+
+              <div
+                class="hidden md:flex items-center gap-4 group cursor-pointer mt-auto h-10"
+              >
+                <div
+                  class="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    class="transition-transform duration-300 transform -rotate-[30deg] group-hover:rotate-0"
+                  >
+                    <path
+                      d="M3 10H17M17 10L11 4M17 10L11 16"
+                      stroke="#000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+
+                <span
+                  class="text-xl flex items-center h-full leading-none text-white"
+                >
+                  Learn more
+                </span>
+              </div>
+            </div>
+            <div class="flex md:hidden items-end justify-between w-full mt-4">
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-10 h-10 bg-white rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 15L15 5M15 5H7M15 5V13"
+                      stroke="#191A23"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="max-w-[150px]">
+                <img
+                  src="assets/img/services/social-media.png"
+                  alt="Social"
+                  class="w-full h-auto"
+                />
+              </div>
+            </div>
+            <div class="hidden md:block max-w-[210px] self-center">
+              <img
+                src="assets/img/services/social-media.png"
+                alt="Social"
+                class="w-full h-auto"
+              />
+            </div>
+          </div>
+
+          <div
+            class="bg-grayLight p-8 md:p-12 rounded-[45px] border border-b-[8px] border-black flex flex-col md:flex-row justify-between h-auto md:h-[310px] relative overflow-hidden gap-6"
+          >
+            <div class="flex flex-col justify-between h-full relative z-10">
+              <div class="flex flex-col items-start">
+                <span
+                  class="bg-lime text-2xl md:text-3xl font-medium px-1.5 rounded-md leading-tight"
+                  >Email</span
+                >
+                <span
+                  class="bg-lime text-2xl md:text-3xl font-medium px-1.5 rounded-md leading-tight"
+                  >Marketing</span
+                >
+              </div>
+              <div
+                class="hidden md:flex items-center gap-4 group cursor-pointer mt-auto h-10"
+              >
+                <div
+                  class="w-10 h-10 bg-black rounded-full flex items-center justify-center shrink-0"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    class="transition-transform duration-300 transform -rotate-[30deg] group-hover:rotate-0"
+                  >
+                    <path
+                      d="M3 10H17M17 10L11 4M17 10L11 16"
+                      stroke="#B9FF66"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+
+                <span
+                  class="text-xl flex items-center h-full leading-none text-primary"
+                >
+                  Learn more
+                </span>
+              </div>
+            </div>
+            <div class="flex md:hidden items-end justify-between w-full mt-4">
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-10 h-10 bg-black rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 15L15 5M15 5H7M15 5V13"
+                      stroke="#B9FF66"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="max-w-[150px]">
+                <img
+                  src="assets/img/services/email.png"
+                  alt="Email"
+                  class="w-full h-auto"
+                />
+              </div>
+            </div>
+            <div class="hidden md:block max-w-[210px] self-center">
+              <img
+                src="assets/img/services/email.png"
+                alt="Email"
+                class="w-full h-auto"
+              />
+            </div>
+          </div>
+
+          <div
+            class="bg-lime p-8 md:p-12 rounded-[45px] border border-b-[8px] border-black flex flex-col md:flex-row justify-between h-auto md:h-[310px] relative overflow-hidden gap-6"
+          >
+            <div class="flex flex-col justify-between h-full relative z-10">
+              <div class="flex flex-col items-start">
+                <span
+                  class="bg-white text-2xl md:text-3xl font-medium px-1.5 rounded-md leading-tight"
+                  >Content</span
+                >
+                <span
+                  class="bg-white text-2xl md:text-3xl font-medium px-1.5 rounded-md leading-tight"
+                  >Creation</span
+                >
+              </div>
+              <div
+                class="hidden md:flex items-center gap-4 group cursor-pointer mt-auto h-10"
+              >
+                <div
+                  class="w-10 h-10 bg-black rounded-full flex items-center justify-center shrink-0"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    class="transition-transform duration-300 transform -rotate-[30deg] group-hover:rotate-0"
+                  >
+                    <path
+                      d="M3 10H17M17 10L11 4M17 10L11 16"
+                      stroke="#B9FF66"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+
+                <span
+                  class="text-xl flex items-center h-full leading-none text-primary"
+                >
+                  Learn more
+                </span>
+              </div>
+            </div>
+            <div class="flex md:hidden items-end justify-between w-full mt-4">
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-10 h-10 bg-black rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 15L15 5M15 5H7M15 5V13"
+                      stroke="#B9FF66"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="max-w-[150px]">
+                <img
+                  src="assets/img/services/content-creation.png"
+                  alt="Content"
+                  class="w-full h-auto"
+                />
+              </div>
+            </div>
+            <div class="hidden md:block max-w-[210px] self-center">
+              <img
+                src="assets/img/services/content-creation.png"
+                alt="Content"
+                class="w-full h-auto"
+              />
+            </div>
+          </div>
+
+          <div
+            class="bg-primary p-8 md:p-12 rounded-[45px] border border-b-[8px] border-black flex flex-col md:flex-row justify-between h-auto md:h-[310px] relative overflow-hidden gap-6"
+          >
+            <div class="flex flex-col justify-between h-full relative z-10">
+              <div class="flex flex-col items-start">
+                <span
+                  class="bg-lime text-2xl md:text-3xl font-medium px-1.5 rounded-md leading-tight"
+                  >Analytics and</span
+                >
+                <span
+                  class="bg-lime text-2xl md:text-3xl font-medium px-1.5 rounded-md leading-tight"
+                  >Tracking</span
+                >
+              </div>
+              <div
+                class="hidden md:flex items-center gap-4 group cursor-pointer mt-auto h-10"
+              >
+                <div
+                  class="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    class="transition-transform duration-300 transform -rotate-[30deg] group-hover:rotate-0"
+                  >
+                    <path
+                      d="M3 10H17M17 10L11 4M17 10L11 16"
+                      stroke="#000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+
+                <span
+                  class="text-xl flex items-center h-full leading-none text-white"
+                >
+                  Learn more
+                </span>
+              </div>
+            </div>
+            <div class="flex md:hidden items-end justify-between w-full mt-4">
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-10 h-10 bg-white rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 15L15 5M15 5H7M15 5V13"
+                      stroke="#191A23"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="max-w-[150px]">
+                <img
+                  src="assets/img/services/analytics.png"
+                  alt="Analytics"
+                  class="w-full h-auto"
+                />
+              </div>
+            </div>
+            <div class="hidden md:block max-w-[210px] self-center">
+              <img
+                src="assets/img/services/analytics.png"
+                alt="Analytics"
+                class="w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-24 px-4 md:px-0" id="cases">
+        <div
+          class="bg-grayLight rounded-[45px] p-8 md:p-16 flex flex-col md:flex-row items-center justify-between relative mb-28"
+        >
+          <div class="max-w-[500px]">
+            <h2 class="text-3xl font-medium mb-6">Let's make things happen</h2>
+            <p class="md:text-lg mb-8 text-zinc-800">
+              Contact us today to learn more about how our digital marketing
+              services can help your business grow and succeed online.
+            </p>
+            <button
+              class="bg-primary text-white px-6 py-5 rounded-2xl hover:bg-primary/60 ease-in transition-all text-xl cursor-pointer"
+            >
+              Get your free proposal
+            </button>
+          </div>
+
+          <div class="hidden md:block absolute right-40">
+            <img src="assets/img/lets-make.png" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row items-center gap-10 mb-20 mt-[131px]"
+        >
+          <h2 class="bg-lime text-4xl px-2 py-1 rounded-lg font-medium">
+            Case Studies
+          </h2>
+          <p class="max-w-xl text-lg">
+            Explore Real-Life Examples of Our Proven Digital Marketing Success
+            through Our Case Studies
+          </p>
+        </div>
+
+        <div>
+          <div
+            class="hidden md:grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-zinc-600 bg-primary md:p-16 rounded-[45px]"
+          >
+            <div class="pb-10 md:pb-0 md:pr-12">
+              <p class="text-white text-lg leading-relaxed mb-6">
+                For a local restaurant, we implemented a targeted PPC campaign
+                that resulted in a 50% increase in website traffic and a 25%
+                increase in sales.
+              </p>
+              <a
+                href="#"
+                class="text-lime text-xl font-medium flex items-center gap-3 hover:underline"
+              >
+                Learn more
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 15L15 5M15 5H7M15 5V13"
+                    stroke="#B9FF66"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="py-10 md:py-0 md:px-12">
+              <p class="text-white text-lg leading-relaxed mb-6">
+                For a B2B software company, we developed an SEO strategy that
+                resulted in a first page ranking for key keywords and a 200%
+                increase in organic traffic.
+              </p>
+              <a
+                href="#"
+                class="text-lime text-xl font-medium flex items-center gap-3 hover:underline"
+              >
+                Learn more
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 15L15 5M15 5H7M15 5V13"
+                    stroke="#B9FF66"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="pt-10 md:pt-0 md:pl-12">
+              <p class="text-white text-lg leading-relaxed mb-6">
+                For a national retail chain, we created a social media marketing
+                campaign that increased followers by 25% and generated a 20%
+                increase in online sales.
+              </p>
+              <a
+                href="#"
+                class="text-lime text-xl font-medium flex items-center gap-3 hover:underline"
+              >
+                Learn more
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 15L15 5M15 5H7M15 5V13"
+                    stroke="#B9FF66"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper mySwiper md:hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bg-primary p-10 rounded-[45px]">
+                <p class="text-white text-lg leading-relaxed mb-6">
+                  For a local restaurant, we implemented a targeted PPC campaign
+                  that resulted in a 50% increase in website traffic and a 25%
+                  increase in sales.
+                </p>
+                <a
+                  href="#"
+                  class="text-lime text-xl font-medium flex items-center gap-3"
+                >
+                  Learn more
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 15L15 5M15 5H7M15 5V13"
+                      stroke="#B9FF66"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="swiper-slide bg-primary p-10 rounded-[45px]">
+                <p class="text-white text-lg leading-relaxed mb-6">
+                  For a local restaurant, we implemented a targeted PPC campaign
+                  that resulted in a 50% increase in website traffic and a 25%
+                  increase in sales.
+                </p>
+                <a
+                  href="#"
+                  class="text-lime text-xl font-medium flex items-center gap-3"
+                >
+                  Learn more
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 15L15 5M15 5H7M15 5V13"
+                      stroke="#B9FF66"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="swiper-slide bg-primary p-10 rounded-[45px]">
+                <p class="text-white text-lg leading-relaxed mb-6">
+                  For a local restaurant, we implemented a targeted PPC campaign
+                  that resulted in a 50% increase in website traffic and a 25%
+                  increase in sales.
+                </p>
+                <a
+                  href="#"
+                  class="text-lime text-xl font-medium flex items-center gap-3"
+                >
+                  Learn more
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 15L15 5M15 5H7M15 5V13"
+                      stroke="#B9FF66"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination !relative !mt-8 rounded-[45px]"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#191A23",
+            lime: "#B9FF66",
+            grayLight: "#F3F3F3",
+          },
+          animation: {
+            "infinite-scroll": "infinite-scroll 25s linear infinite",
+          },
+          keyframes: {
+            "infinite-scroll": {
+              from: { transform: "translateX(0)" },
+              to: { transform: "translateX(-50%)" },
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuOpen = document.getElementById("menu-open");
+      const menuClose = document.getElementById("menu-close");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      const toggleMenu = () => {
+        mobileMenu.classList.toggle("translate-x-full");
+        document.body.classList.toggle("overflow-hidden");
+      };
+
+      menuOpen.addEventListener("click", toggleMenu);
+      menuClose.addEventListener("click", toggleMenu);
+
+      const navLinks = mobileMenu.querySelectorAll("a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", toggleMenu);
+      });
+    });
+
+    window.addEventListener("scroll", () => {
+      const nav = document.getElementById("main-nav");
+
+      if (window.scrollY > 20) {
+        nav.classList.add("shadow-md", "py-2");
+        nav.classList.remove("py-4");
+      } else {
+        nav.classList.remove("shadow-md", "py-2");
+        nav.classList.add("py-4");
+      }
+    });
+  </script>
+</html>
